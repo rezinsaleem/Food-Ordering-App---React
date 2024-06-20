@@ -1,0 +1,210 @@
+.header{
+  display: flex;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(18, 18, 18, 0.4);
+}
+
+.app-logo{
+  margin-left: 20px;
+  width: 10%;
+  
+}
+
+.nav-items>ul{
+  display: flex;
+  list-style-type: none;
+  margin-top: 37px;
+  margin-left: 290px;
+  
+}
+.nav-items>ul>li{
+  padding: 15px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #434343;
+}
+
+.nav-items>ul>li:hover{
+  color: rgb(255, 64, 0);
+  cursor: pointer;
+}
+
+
+body{
+  background-color:rgb(244, 244, 244);
+}
+
+.search{
+  padding: 20px;
+  display: flex;
+  justify-content:center;
+}
+
+.topRated-btn{
+  margin: 20px;
+  display: flex;
+  justify-content:center;
+}
+
+.card {
+  width: 200px;
+  height: auto;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px rgba(18, 18, 18, 0.4);
+  margin-left: 15px;
+  margin-top: 15px;
+  padding-bottom: 20px; 
+}
+
+.card:hover {
+  cursor: pointer;
+  border: 0.5px solid rgb(71, 71, 71);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0;
+  padding: 0 10px;
+  color: rgb(45, 45, 45);
+}
+
+.card h4 {
+  margin: 10px 0;
+  padding: 0 10px;
+  color: gray;
+}
+.card h5 {
+  margin: 10px 0;
+  padding: 0 10px;
+  color: green;
+}
+
+.restCardGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shimmerContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shimmerCard{
+  width: 200px;
+  height: 300px;
+  background-color: #d1d1d1;
+  box-shadow: 2px 2px 5px rgba(18, 18, 18, 0.4);
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.shimmerSearchContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 43px;
+}
+
+.shimmerSearch {
+  width: 60%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #d1d1d1;
+  box-shadow: 2px 2px 5px rgba(18, 18, 18, 0.4);
+}
+
+.shimmerButtonContainer{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 43px;
+}
+
+.shimmerButton {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #d1d1d1;
+  box-shadow: 2px 2px 5px rgba(18, 18, 18, 0.4);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.search input[type="text"] {
+  width: 50%;
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.search input[type="text"]:focus {
+  border-color: rgb(113, 108, 106);
+}
+
+.searchBtn {
+  padding: 10px 20px;
+  border: 2px solid rgb(113, 108, 106);
+  background-color: rgb(113, 108, 106);
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.searchBtn:hover {
+  background-color:rgb(85, 83, 82);
+  border-color: rgb(85, 83, 82);
+}
+
+.search input[type="text"], .searchBtn {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.filterButtons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: 2px solid rgb(113, 108, 106);
+  background-color: white;
+  color: rgb(113, 108, 106);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: rgb(113, 108, 106);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.filter-btn.active {
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+
