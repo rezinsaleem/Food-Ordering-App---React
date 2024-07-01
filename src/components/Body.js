@@ -1,7 +1,9 @@
 import { MAIN_URL } from "../utils/constant";
 import RestCard from "./RestCard";
 import { useEffect, useState } from "react";
-import Shimmer from "./shimmer";
+import Shimmer from "./Shimmer";
+import Offline from "./Offline";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body =()=>{
   const [listOfRestaurant,setListOfRestaurant] = useState([]);
@@ -20,6 +22,13 @@ const json = await data.json();
 let restaurants=json.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
 setListOfRestaurant(restaurants)
 setFullData(restaurants)
+}
+
+const onlineStatus = useOnlineStatus();
+if(onlineStatus===false){
+  return (
+    <Offline />
+  )
 }
 
 if(listOfRestaurant.length==0){

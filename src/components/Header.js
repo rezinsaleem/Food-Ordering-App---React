@@ -1,5 +1,6 @@
 import logo from '../../assets/app-logo.png';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [btnName,setBtnName]=useState("SignIn")
@@ -9,9 +10,10 @@ const Header = () => {
 
       <div className="nav-items">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Cart</li>
+          <li><Link to={'/'} className="no-decoration">Home</Link></li>
+          <li><Link to={'/about'} className="no-decoration">About</Link></li>
+          <li><Link to={'/contact'} className="no-decoration">Contact</Link></li>
+          <li><Link to={'/bringme-mart'} className="no-decoration">BringMart</Link></li>
           <li onClick={()=>{
             btnName =="SignIn"? setBtnName("SignOut"):setBtnName("SignIn");
           }}>{btnName}</li>

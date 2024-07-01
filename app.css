@@ -14,7 +14,7 @@
   display: flex;
   list-style-type: none;
   margin-top: 37px;
-  margin-left: 290px;
+  margin-left: 240px;
   
 }
 .nav-items>ul>li{
@@ -207,4 +207,131 @@ body{
   color: white;
   border-color: red;
 }
+
+.errorRoute>h1{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  color: red;
+}
+.errorRoute>h2{
+  display: flex;
+  justify-content: center;
+}
+.no-decoration {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.menuPage-container {
+  width: 80%;
+  margin: auto;
+}
+
+.restaurant-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.restaurant-image {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.menu-image{
+  width: 120px;
+  height: 120px;
+  margin-top: 5px;
+  
+  border-radius: 10px;
+}
+
+.restaurant-info {
+  flex-grow: 1;
+}
+
+.restaurant-name {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.restaurant-description,
+.restaurant-rating {
+  margin: 0;
+}
+
+
+
+.menu-category {
+  margin-bottom: 20px;
+}
+
+.category-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  flex: 1 1 calc(50% - 10px);
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.item-name {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+.item-description {
+  margin: 0 0 10px 0;
+}
+
+.item-price {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+.add-to-cart-button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-summary {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.cart-summary h2 {
+  font-size: 20px;
+}
+
+.checkout-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 
