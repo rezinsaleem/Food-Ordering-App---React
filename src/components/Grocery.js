@@ -1,4 +1,4 @@
-import Shimmer from "./shimmer";
+import Shimmer from "./Shimmer";
 import GroCard from "./GroCard";
 import { useEffect, useState } from "react";
 import { GRO_URL } from "../utils/constant";

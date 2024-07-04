@@ -7,7 +7,7 @@ import Contact from "./src/components/Contact";
 import About from "./src/components/About";
 import Error from "./src/components/Error";
 import RestMenu from "./src/components/RestMenu";
-import Shimmer from "./src/components/shimmer";
+import Shimmer from "./src/components/Shimmer";
 
 const Grocery = lazy(()=> import('./src/components/Grocery'))
 

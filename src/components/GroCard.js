@@ -1,5 +1,6 @@
 
-import {GROIMG_URL} from '../utils/constant'
+
+import { CDN_URL } from '../utils/constant';
 
 const GroCard = (props) => {
   const {groData} = props;
@@ -8,7 +9,7 @@ const GroCard = (props) => {
 
   return (
    <div className="card">
-      <img className="restImg" src={GROIMG_URL + groData.imageId} alt="img" />
+      <img className="restImg" src={CDN_URL + groData.imageId} alt="img" />
       <h3>{groData.displayName}</h3>
     </div>
   
