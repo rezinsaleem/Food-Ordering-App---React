@@ -2,8 +2,7 @@ import UserClass from "./UserClass";
 
 const Contact = () => {
   return (
-    <div style={{ marginLeft: "10%", marginTop: "5%" }}>
-      <h1>Bring ME!</h1>
+    <div className="ml-32 mt-24 text-xl">
       <UserClass location={"Bengaluru"} ph={9526559184} />
     </div>
   );

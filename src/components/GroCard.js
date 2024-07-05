@@ -8,9 +8,9 @@ const GroCard = (props) => {
 
 
   return (
-   <div className="card">
-      <img className="restImg" src={CDN_URL + groData.imageId} alt="img" />
-      <h3>{groData.displayName}</h3>
+   <div className="w-[200px] h-auto relative rounded-xl bg-white shadow-xl ml-3.5 mt-3.5 pb-5 hover:cursor-pointer hover:border hover:border-gray-500">
+      <img className="w-full h-[200px] object-cover" src={CDN_URL + groData.imageId} alt="img" />
+      <h3 className="mx-2.5 py-2.5 text-gray-600 font-medium text-lg">{groData.displayName}</h3>
     </div>
   
   )

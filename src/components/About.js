@@ -2,8 +2,8 @@
 
 const About = () => {
   return (
-    <div style={{display:'flex',justifyContent:'center', marginTop:'5%'}}>
-      <h1>hellooo this is AABBOOUUTT</h1>
+    <div className="flex justify-center mt-32">
+      <h1 className="text-3xl">hellooo this is AABBOOUUTT</h1>
     </div>
   )
 }

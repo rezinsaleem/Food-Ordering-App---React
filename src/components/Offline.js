@@ -1,9 +1,9 @@
 
 const Offline = () => {
   return (
-    <div>
-      <h1  style={{display:'flex',justifyContent:'center', marginTop:'5%'}}>Looks like you're offline!! </h1>
-      <h1  style={{display:'flex',justifyContent:'center', marginTop:'5%'}}>Please check your internet connection 🚫</h1>
+    <div className="text-xl  mt-28">
+      <h1 className="flex justify-center ">Looks like you're offline!! </h1>
+      <h1 className="flex justify-center ">Please check your internet connection 🚫</h1>
     </div>
   )
 }

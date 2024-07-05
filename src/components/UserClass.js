@@ -44,20 +44,21 @@ componentWillUnmount(){
     const {name,bio,avatar_url}=this.state.userInfo;
     const {location , ph} =this.props;
   return (
-    <div style={{display:'flex',justifyContent:'space-between'}}>
+    <div className='flex justify-around'>
     <div>
+    <h1>Bring ME!</h1>
      <h2>{name} - {bio}</h2>
       <h2>Location: {location}</h2>
       <h2>Phone No: {ph}</h2>
       <h2>count :{count}</h2>
-      <button onClick={()=>{
+      <button className='bg-gray-500 text-white rounded-xl p-2 mt-1' onClick={()=>{
         this.setState({
           count:this.state.count+1,
         })
       }
       }>count</button>
       </div>
-      <img style={{marginRight:'10%', width:"300px",borderRadius:'180px'}} src={avatar_url} alt="" />
+      <img className='mr-28 w-72 rounded-full' src={avatar_url} alt="" />
     </div>
   )
 }
